@@ -21,7 +21,7 @@ var authtools = require('./authTools.js');
 //     verbose                      Output execution detail log
 var options = {
     loginUrl: "https://login.salesforce.com",
-   // packageName: ciconfig.packageName,
+    packageName: ciconfig.packageName,
     checkOnly: ciconfig.checkOnly,
     testLevel: ciconfig.testLevel,
     ignoreWarnings: ciconfig.ignoreWarnings,
@@ -33,7 +33,7 @@ var options = {
 var branch = git.branch();
 
 var retrievePackageByName = function(){
-    tools.retrieveByPackageNames(options).then(function (res) {
+    tools.retrieveByPackageNames([options.packageName], options).then(function (res) {
         tools.reportRetrieveResult(res, console, options.verbose)
         if (!res.success) {
             process.exit(1)

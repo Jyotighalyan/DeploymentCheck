@@ -16,7 +16,7 @@ var git = require('git-rev-sync');
 
 var config = {
     url: 'https://login.salesforce.com',
-   // packageName: 'ForeTeesCMS',
+    packageName: 'ForeTeesCMS',
     testLevel: 'RunLocalTests', // NoTestRun
     runDeleteScript: true,
     checkOnly: false,
