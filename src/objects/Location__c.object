@@ -56,9 +56,9 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
-        <fullName>Hidden_From_Calendar__changed__c</fullName>
+    <fields>        
         <defaultValue>false</defaultValue>
+        <fullName>Hidden_From_Calendar__changed__c</fullName>
         <externalId>false</externalId>
         <label>Hidden From Calendar</label>
         <trackTrending>false</trackTrending>
