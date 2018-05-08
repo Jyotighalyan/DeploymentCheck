@@ -1,4 +1,0 @@
-var authConfig = {};
-authConfig.username = 'jyoti.ghalyan@foreteescms.jyoti_ghalyan';
-authConfig.password = 'Start#123457gyDWhVTc9XBTRIbn1Re6vSK';
-module.exports = authConfig

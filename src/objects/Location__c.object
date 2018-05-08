@@ -56,9 +56,9 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
-        <fullName>Hidden_From_Calendar__c</fullName>
+    <fields>        
         <defaultValue>false</defaultValue>
+        <fullName>Hidden_From_Calendar__changed__c</fullName>
         <externalId>false</externalId>
         <label>Hidden From Calendar</label>
         <trackTrending>false</trackTrending>
@@ -94,18 +94,12 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Order__c</fullName>
-        <externalId>false</externalId>
-        <label>Order</label>
-        <precision>18</precision>
+    </fields>        
         <required>false</required>
         <scale>0</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
     <fields>
         <fullName>Parent_Facility__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
