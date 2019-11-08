@@ -152,15 +152,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <fields>
-        <fullName>Just_To_Test__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Just To Test</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
+    <externalSharingModel>ReadWrite</externalSharingModel>    
     <fields>
         <fullName>testPackageNames__c</fullName>
         <externalId>false</externalId>
@@ -171,16 +163,7 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>test_ar_rich__c</fullName>
-        <externalId>false</externalId>
-        <label>test ar rich</label>
-        <length>32768</length>
-        <trackTrending>false</trackTrending>
-        <type>Html</type>
-        <visibleLines>25</visibleLines>
-    </fields>
+    </fields>    
     <label>A</label>
     <listViews>
         <fullName>All</fullName>
