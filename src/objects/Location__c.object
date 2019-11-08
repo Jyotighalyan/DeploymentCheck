@@ -55,34 +55,16 @@
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <fields>        
+    <enableStreamingApi>true</enableStreamingApi>       
+    <fields>
+        <fullName>Hidden_From_Calendar_123__c</fullName>
         <defaultValue>false</defaultValue>
-        <fullName>Hidden_From_Calendar__changed__c</fullName>
         <externalId>false</externalId>
         <label>Hidden From Calendar</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <fields>
-        <fullName>Location__c</fullName>
-        <externalId>false</externalId>
-        <label>Location</label>
-        <picklist>
-            <picklistValues>
-                <fullName>North Campus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>South Campus</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
+    
     <fields>
         <fullName>Maximum_Capacity__c</fullName>
         <description>Number of people this facility can hold.</description>
@@ -93,13 +75,9 @@
         <scale>0</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
-        <unique>false</unique>
-    </fields>        
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
+        <unique>false</unique>        
+        
+    </fields> 
     <fields>
         <fullName>Parent_Facility__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -111,62 +89,8 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>In Use</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Repairs</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Sport</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Dining</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Meeting Room</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Class</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Lesson</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <visibleLines>5</visibleLines>
-    </fields>
+    </fields>   
+    
     <label>Location</label>
     <listViews>
         <fullName>All</fullName>
@@ -178,16 +102,8 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Locations</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>Parent_Facility__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Location__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Maximum_Capacity__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Parent_Facility__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Location__c</lookupDialogsAdditionalFields>
+    <searchLayouts>        
         <lookupDialogsAdditionalFields>Maximum_Capacity__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
